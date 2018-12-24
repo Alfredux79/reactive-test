@@ -27,7 +27,7 @@ public class FluxAPITests {
     }
 
     @Test
-    public void connectableFlux() throws InterruptedException {
+    public void connectibleFlux() throws InterruptedException {
 
         Flux<Integer> source = Flux.range(1, 3)
                 .doOnSubscribe(s -> System.out.println("subscribed to source"));
